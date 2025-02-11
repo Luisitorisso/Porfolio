@@ -1,0 +1,98 @@
+/* Estilo general */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Foto de perfil */
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.photo img {
+  max-width: 150px; /* Ajusta el tamaño máximo */
+  height: auto;
+  border-radius: 50%; /* Convierte la imagen en un círculo */
+  border: 3px solid #333; /* Borde opcional */
+}
+
+
+/* Secciones */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Encabezados */
+h1, h2 {
+  color: #333;
+}
+
+/* Botones */
+.btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Proyectos */
+.project {
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.project img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+/* Contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  section {
+      padding: 20px;
+  }
+
+  .photo img {
+      max-width: 100px;
+  }
+}
